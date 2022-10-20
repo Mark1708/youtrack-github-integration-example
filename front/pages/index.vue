@@ -1,14 +1,18 @@
 <template>
   <div>
-    Hello World
+    <InfoBlock />
+    <InstagramBlock />
   </div>
 </template>
 
 <script>
 import Vue from "vue";
+import InfoBlock from "~/components/InfoBlock.vue";
+import InstagramBlock from "~/components/InstagramBlock.vue";
 
 export default Vue.extend({
   name: 'IndexPage',
+  components: { InstagramBlock, InfoBlock },
   data() {
     return {
       title: 'Home'
